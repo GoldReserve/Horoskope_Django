@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Выберите знак</h1>
+    {% for i in elem_lst %}
+            <li><a href="/horoscope/{{i}}"> {{i}} </a></li>
+
+    {% endfor %}
+</body>
+</html>

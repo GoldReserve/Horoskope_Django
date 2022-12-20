@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Типы по стихии</title>
+</head>
+<body>
+<h1>{{ x }}</h1>
+<ul>
+    <h1>Выберите стихию</h1>
+    {% for i in sign_type %}
+            <li><a href="/horoscope/type/{{i}}"> {{i}} </a></li>
+
+    {% endfor %}
+</ul>
+</body>
+</html>
