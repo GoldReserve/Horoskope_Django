@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все знаки зодиака</title>
+</head>
+<body>
+<h1>Выберите свой знак зодиака</h1>
+<ul>
+    {% for key, val in sign.items %}
+            <li><a href="{{ key }}">{{ key }}</a></li>
+
+    {% endfor %}
+</ul>
+</body>
+</html>
