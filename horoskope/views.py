@@ -187,5 +187,9 @@ def horoscope_list(request):
     return render(request, 'horoskope/horoscope_list.html', {'sign': sign})
 
 
-def horoscope_element(request):
-    return render(request, 'horoskope/sign_type.html', {'sign': sign})
+def horoscope_element(request, elem):
+    return render(request, 'horoskope/sign_type.html', {'sign': sign, 'element_sign':element_sign.keys()})
+
+def signs_from_elem(request, elem):
+    return render(request, 'horoskope/signs_from_elem.html',
+                  {'sign': sign, 'element_sign':element_sign.get(f'{elem}').split(',')})
